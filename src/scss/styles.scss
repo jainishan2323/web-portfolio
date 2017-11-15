@@ -1,7 +1,15 @@
-@import 'fullPage.scss';
-@import 'reset.scss';
-@import 'colors.scss';
-@import 'typography.scss';
+@import './base/fullPage.scss';
+@import './base/reset.scss';
+@import './base/shadows.scss';
+@import './base/animations.scss';
+
+@import './variables/colors.scss';
+@import './variables/typography.scss';
+
+@import './application/common.scss';
+@import './application/home.scss';
+@import './application/about.scss';
+
 
 body {
     font-family: 'Raleway', sans-serif;

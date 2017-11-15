@@ -1,0 +1,51 @@
+#home {
+    background: $white;
+    color: $text-primary;
+    height: 100%;
+    p {
+        margin: 10px 0;
+    }
+    .designation {
+        overflow: hidden;
+        height: 100px;
+        max-width: 700px;
+        position: relative;
+        margin: 0 auto;
+        text-transform: uppercase;
+        .fixed {
+            position: absolute;
+        }
+        h1 {
+            text-align: center;
+        }
+        &:before, &:after {
+            position: absolute;
+            top: 0;
+            font-size: 6em;
+            color: $secondary-color;
+            -webkit-animation-name: opacity;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            animation-name: opacity;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        &:before {
+            content: '{';
+            left: 0;
+        }
+        &:after {
+            content: '}';
+            right: 0;
+        }
+        &__list {
+            list-style: none;
+            -webkit-animation-name: change;
+            -webkit-animation-duration: 10s;
+            -webkit-animation-iteration-count: infinite;
+            animation-name: change;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+    }
+}
