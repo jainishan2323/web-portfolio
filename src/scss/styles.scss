@@ -1,5 +1,5 @@
-@import './base/fullPage.scss';
 @import './base/reset.scss';
+@import './base/fullPage.scss';
 @import './base/shadows.scss';
 @import './base/animations.scss';
 
@@ -28,4 +28,8 @@ p{
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
+}
+
+#fullpage {
+    top: -10px;
 }
