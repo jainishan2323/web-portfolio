@@ -16,3 +16,35 @@
 .indigo {
     color: $secondary-color;
 }
+
+.animated-underline-link {
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 0px;
+      height: 3px;
+      margin: 5px 0 0;
+      transition: all 0.5s ease-in-out;
+      transition-duration: 0.4s;
+      opacity: 0;
+    }
+    &:before {
+        left: calc(50%);
+        background-color: $pink;
+    }
+    &:after {
+        right: calc(50%);
+        background-color: $pink;
+    }
+    &:hover {
+        cursor: pointer;
+        &:before,
+        &:after {
+          width: 50%;
+          opacity: 1;
+        }
+    }
+}
