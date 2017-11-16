@@ -9,14 +9,14 @@ fullPage.initialize('#fullpage', {
 });
 
 window.openModal = function() {
-    var modal = document.getElementById('modal-container');    
+    const modal = document.getElementById('modal-container');    
     modal.removeAttribute("class");
     modal.classList.add('one');
     document.body.classList.add('modal-active');
 }
 
 window.closeModal = function() {
-    var modal = document.getElementById('modal-container');
+    const modal = document.getElementById('modal-container');
     modal.classList.add('out');
     document.body.classList.remove('modal-active');
 }
