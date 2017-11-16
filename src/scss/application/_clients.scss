@@ -4,10 +4,85 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin-top: 50px;
         li {
-            max-width: 150px;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            border: 5px solid $white;
+            background-position-x: 45%;
+            p {
+                font-size: .8em;
+                font-family: $sans-serif;
+                position: absolute;
+                opacity: 0;
+                transition: all 0.5s ease;
+                padding: 5px;
+                bottom: 0;
+                color: $white;
+                z-index: 2;
+                bottom: 30px;
+            }            
             img {
                 width: 100%;
+                max-width: 120px;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 1;
+                transition: all 0.2s ease-out;
+            }
+            &:after {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                content: '';
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: #000;
+                opacity: 0;
+            }
+
+            &:active, &:hover {
+                p {
+                    opacity: 1;
+                    bottom: 70px;
+                }
+                &.jeep {
+                    background-image: url('../images/jeep.jpg');
+                    background-size: cover;
+                }
+                &.chrysler {
+                    background-image: url('../images/chrysler.jpg');
+                    background-size: cover;
+                }
+                &.taj {
+                    background-image: url('../images/tajhotels.jpg');
+                    background-size: cover;
+                }
+                &.atnt {
+                    background-image: url('../images/at-t.svg');
+                    background-size: cover;
+                }
+                &.vivo {
+                    background-image: url('../images/vivo.png');
+                    background-size: cover;
+                }
+                &.fiat {
+                    background-image: url('../images/fiat.jpg');
+                    background-size: cover;
+                }
+                img {
+                    opacity: 0;
+                }
+                &:after {
+                    opacity: 0.7;
+                }
             }
         }
     }    
