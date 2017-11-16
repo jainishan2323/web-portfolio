@@ -14,7 +14,7 @@ module.exports = {
                 test: /\.scss$/, 
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: ['css-loader','sass-loader'],
+                    use: ['css-loader?sourceMap','sass-loader?sourceMap'],
                     publicPath: './'
                 })
             },
@@ -24,7 +24,11 @@ module.exports = {
                 use: 'babel-loader'
             },
             {
-                test: /\.(png|jpg|jpeg|gif)$/,
+                test: /\.pug$/,
+                use: ['html-loader', 'pug-html-loader']
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif|svg)$/,
                 use: 'file-loader'
             }
         ]
@@ -37,11 +41,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             title: 'Ishan Jain',
-            minify: {
-                collapseWhitespace: true
-            },
-            hash: true,
-            template: './src/templates/index.ejs'
+            template: './src/templates/index.pug'
         })
     ]
 }

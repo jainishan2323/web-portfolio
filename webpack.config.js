@@ -29,7 +29,7 @@ module.exports = {
                 use: ['html-loader', 'pug-html-loader']
             },
             {
-                test: /\.(png|jpg|jpeg|gif)$/,
+                test: /\.(png|jpg|jpeg|gif|svg)$/,
                 use: 'file-loader'
             }
         ]

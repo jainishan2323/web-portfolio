@@ -9,6 +9,7 @@
 @import './application/common.scss';
 @import './application/home.scss';
 @import './application/about.scss';
+@import './application/clients.scss';
 
 
 body {
@@ -26,7 +27,7 @@ h1{
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    max-width: 800px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 30px;
 }

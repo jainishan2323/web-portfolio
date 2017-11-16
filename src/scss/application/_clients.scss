@@ -1,0 +1,14 @@
+#clients {
+    background: $white;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        li {
+            max-width: 150px;
+            img {
+                width: 100%;
+            }
+        }
+    }    
+}
