@@ -1,0 +1,13 @@
+<div class="content">
+    h3 Contacte Me
+    form(action="onFormSubmit()")
+        .input-field
+            input(type="text", name="yourname", id="yourname" required)
+            label(for="yourname") Name
+        .input-field
+            input(type="text"  id="email" name="email" required)
+            label(for="email") Email
+        .input-field
+            textarea(name="message" placeholder="How may I help you...?")
+        input(type="submit" value="Send" name="send")
+</div>

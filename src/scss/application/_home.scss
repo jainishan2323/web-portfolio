@@ -28,6 +28,7 @@
             text-align: center;
         }
         &:before, &:after {
+            will-change: opacity;
             position: absolute;
             top: 0;
             font-size: 6em;
@@ -48,6 +49,7 @@
             right: 0;
         }
         &__list {
+            will-change: transform;
             list-style: none;
             -webkit-animation-name: change;
             -webkit-animation-duration: 10s;

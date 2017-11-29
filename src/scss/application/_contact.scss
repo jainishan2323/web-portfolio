@@ -1,0 +1,55 @@
+#contact {
+    background: $secondary-color;
+    color: $white;
+    form {
+        max-width: 800px;
+        margin: 0 auto;
+        .input-field {
+            position: relative;
+            color: $white;
+            input {
+                position: relative;
+                display: block;
+                background: transparent;
+                width: 100%;
+                font-size: 1.2em;
+                padding: 10px;
+                margin: 20px 0;
+                border: none;
+                border-bottom: 2px solid $main-color;
+                color: $white;
+                z-index: 2;
+                &:focus, &:valid {
+                    outline: none;
+                    border-bottom: 2px solid $pink;
+                    + label {
+                        top: -5px;
+                        font-size: 0.8em;
+                        font-weight: 700;
+                        color: $pink;
+                    }
+                }
+            }
+            label {
+                position: absolute;
+                left: 0;
+                top: 20px;
+                z-index: 1;
+                transition: all 0.3s ease;
+            }
+        }
+        textarea {
+            background: $main-color;
+            border: none;
+            font-size: 1.2em;
+            padding: 10px;
+            margin: 20px 0;
+            width: 100%;
+            height: 200px;
+            color: white;
+            &:focus {
+                outline: 2px solid $pink;
+            }
+        }
+    }
+}

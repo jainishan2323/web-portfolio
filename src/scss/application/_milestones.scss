@@ -1,4 +1,24 @@
 #milestones {
     background: $secondary-color;
     color: $white;
+    .milestones-grid {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        .milestone {
+            width: 200px;
+            img {
+                width: 50%;
+            }
+            .details {
+                h4 {
+                    margin: 10px 0;
+                    font-weight: 300;
+                }
+                h6 {
+                    font-weight: 600;
+                }
+            }
+        }
+    }    
 }

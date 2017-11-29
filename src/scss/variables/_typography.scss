@@ -60,9 +60,14 @@ h5 {
     font-size: $h5;
 }
 
+h6 {
+    font-family: $sans-serif;
+    font-size: $h6;
+}
+
 p {
     font-family: $serif;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 400;
     line-height: 1.2em;
     padding: 10px 0;

@@ -89,3 +89,14 @@
         }
     }
 }
+
+.seperator {
+    margin: 15px 0;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 2px;
+        background: $dark-grey;
+    }
+}
