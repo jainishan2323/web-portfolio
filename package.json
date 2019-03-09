@@ -8,7 +8,7 @@
     "prod": "webpack -p --config webpack.build.config.js",
     "unmin": "webpack --config webpack.build.config.js"
   },
-  "author": "",
+  "author": "Ishan Jain",
   "license": "ISC",
   "dependencies": {
     "babel": "^6.23.0",
